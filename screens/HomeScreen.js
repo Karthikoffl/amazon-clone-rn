@@ -245,7 +245,7 @@ const HomeScreen = () => {
   const fetchAddresses = async () => {
     try {
       const response = await axios.get(
-        `http://192.168.0.118:8000/addresses/${userId}`
+        `https://ill-red-jaguar-veil.cyclic.app/addresses/${userId}`
       );
       const { addresses } = response.data;
 

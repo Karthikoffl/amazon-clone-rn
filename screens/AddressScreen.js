@@ -44,7 +44,10 @@ const AddressScreen = () => {
       postalCode,
     };
     axios
-      .post("http://192.168.0.118:8000/addresses", { userId, address })
+      .post("https://ill-red-jaguar-veil.cyclic.app/addresses", {
+        userId,
+        address,
+      })
       .then((response) => {
         Alert.alert("Success", "Address added successfully");
         setName("");

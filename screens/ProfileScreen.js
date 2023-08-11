@@ -56,7 +56,7 @@ const ProfileScreen = () => {
     const fetchUserProfile = async () => {
       try {
         const response = await axios.get(
-          `http://192.168.0.118:8000/profile/${userId}`
+          `https://ill-red-jaguar-veil.cyclic.app/profile/${userId}`
         );
         const { user } = response.data;
         setUser(user);
@@ -82,7 +82,7 @@ const ProfileScreen = () => {
     const fetchOrders = async () => {
       try {
         const response = await axios.get(
-          `http://192.168.0.118:8000/orders/${userId}`
+          `https://ill-red-jaguar-veil.cyclic.app/orders/${userId}`
         );
         const orders = response.data.orders;
         setOrders(orders);

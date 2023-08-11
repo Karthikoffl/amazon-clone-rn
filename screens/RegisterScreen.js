@@ -29,7 +29,7 @@ const RegisterScreen = () => {
 
     //send a POST request to the api
     axios
-      .post("http://192.168.0.118:8000/register", user)
+      .post("https://ill-red-jaguar-veil.cyclic.app/register", user)
       .then((response) => {
         console.log(response);
         Alert.alert(

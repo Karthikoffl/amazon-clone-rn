@@ -42,7 +42,7 @@ const LoginScreen = () => {
     };
 
     axios
-      .post("http://192.168.0.118:8000/login", user)
+      .post("https://ill-red-jaguar-veil.cyclic.app/login", user)
       .then((response) => {
         console.log(response);
         const token = response.data.token;

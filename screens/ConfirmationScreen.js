@@ -41,7 +41,7 @@ const ConfirmationScreen = () => {
   const fetchAddresses = async () => {
     try {
       const response = await axios.get(
-        `http://192.168.0.118:8000/addresses/${userId}`
+        `https://ill-red-jaguar-veil.cyclic.app/addresses/${userId}`
       );
       const { addresses } = response.data;
 
@@ -65,7 +65,7 @@ const ConfirmationScreen = () => {
       };
 
       const response = await axios.post(
-        "http://192.168.0.118:8000/orders",
+        "https://ill-red-jaguar-veil.cyclic.app/orders",
         orderData
       );
       if (response.status === 200) {
@@ -107,7 +107,7 @@ const ConfirmationScreen = () => {
       };
 
       const response = await axios.post(
-        "http://192.168.0.118:8000/orders",
+        "https://ill-red-jaguar-veil.cyclic.app/orders",
         orderData
       );
       if (response.status === 200) {
